@@ -1,0 +1,229 @@
+*{
+    font-family: 'Merriweather', serif;
+}
+
+body{
+    text-align: center;
+}    
+
+.baner{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: white;
+    padding-left: 400px;
+    padding-right: 400px;
+    border-bottom: 1px solid gray;
+  }
+  #ikony{
+    text-align: center;
+    padding-top: 60px;
+  }
+  .oferty{
+    text-align: center;
+  }
+  nav{
+    margin: 5px 0 5px 0;
+    text-align: center;
+    word-spacing: 35px;
+    text-transform: uppercase;
+    font-size: 105%;
+    
+    
+  }
+  #menu1{
+    border-bottom: 1px solid;
+    padding: 5px;
+    box-shadow: 3px 5px 4px  #888888;
+  }
+  #onas{
+    word-spacing: 5px;
+  }
+  #od{
+    word-spacing: 5px;
+  }
+  a:link{
+    text-decoration: none;
+    
+  }
+  a{
+    color: black;
+    padding: 10px 0 10px 0;
+  }
+ #b1{
+    background-color: tomato;
+    height: 50px;
+    width: 130px;
+    
+ }
+ h2{
+    color: goldenrod;
+ }
+ .diety{
+    text-align: center;
+    
+ }
+ #dieta1,#dieta2, #dieta3, #dieta4 {
+    border: 4px solid goldenrod;
+    width: 250px;
+    margin: 20px;
+    padding-top: 40px;
+ }
+ 
+ #diety{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    
+ }
+ .zdjdiet{
+    margin-top: -100px;
+    top: 110px;
+    margin-left: 50px;
+    left: -20px;
+    z-index: 2;
+    position: relative;
+ }
+ .zamawiam{
+    float: left;
+    margin-left: 20px;
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    height: 40px;
+    width: 120px;
+    margin-bottom: 15px;
+ }
+ .dt{
+    margin-bottom: 35px;
+ }
+ #zpd{
+    background-color: white;
+    border: 2px solid black;
+    height: 50px;
+    width: 200px;
+    color: black;
+    font-size: 1rem;
+ }
+ .reklama{
+   margin: 30px;
+   text-align: center;
+ }
+ .reklamazdj{
+   margin: 20px;
+ }
+ #dzialanie{
+   text-align: center;
+ }
+.aktualnosci{
+   text-align: center;
+}
+#naj1, #naj2{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+}
+.naj{
+   display: grid;
+   grid-template-columns: auto;
+   width: 500px;
+   justify-content: center;
+}
+.dsw, #zw{
+   background-color: white;
+    border: 2px solid black;
+    height: 50px;
+    width: 200px;
+    color: black;
+    font-size: 1rem;
+}
+.dsw{
+   margin-left: 150px;
+}
+.pakt{
+   color: #888888;
+}
+#sponsorzy{
+   border: 1px solid black;
+   margin-left: 23%;
+   margin-right: 23%;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   margin-bottom: 20px;
+}
+#testowa{
+   background-image: url(testowa.jpg);
+   margin-left: 20rem;
+   margin-right: 20rem;
+   height: 20rem;
+   color: white;
+   padding-top: 60px;
+}
+.dt1{
+   font-size: 3rem;
+   margin-bottom: -40px;
+   text-transform: uppercase;
+}
+.zwc{
+   margin-top: 60px;
+   background-color: red;
+   color: white;
+   height: 50px;
+   width: 150px;
+}
+#dtp2{
+   color: gold;
+}
+.opis{
+   margin-top: 5rem;
+   width: 70rem;
+   justify-content: center;
+   margin-left: 25rem;
+}
+.opish3, .opish2{
+   color: goldenrod;
+   
+font-family: 'Kalam', cursive;
+}
+.minimenu{
+   margin-top: 5rem;
+   
+}
+#minimenu1, #minimenu2{
+   float: left;
+   justify-content: center; 
+   width: 160px;
+}
+#minimenu1{
+   margin-left: 25rem;
+   margin-right: 10rem;
+}
+#minimenu2{
+   padding-top: 75px;
+   margin-right: 0;
+   padding-right: 0;
+}
+
+.platnosci{
+   border: 1px solid gray;
+   padding: 5px;   
+}
+#platnosc{
+   
+}
+#sociale{
+   word-spacing: 20px;
+}
+.mm{
+   word-spacing: 2px;
+   font-size: 1.5rem;
+   margin-bottom: 20px;
+}
+
+
+
+ 
+ 
