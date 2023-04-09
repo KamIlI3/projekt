@@ -17,11 +17,39 @@
 </head>
 <body>
     <header>
-        <section id="baner" class="baner">
-            <img src="logo.png" id="logo" alt="logo" width="200px" height="100px">
-            <img src="gwarancja.png" id="gwarancja" alt="gwarancja" width="150px" height="100px">
-            <img src="dostawa.png" id="dostawa" alt="dostawa" height="100px" width="200px">
-            <div id="ikony">
+        <section class="baner">
+            <img src="logo.png" id="logo" class="ban" alt="logo" width="200px" height="100px">
+
+            <div class="mySlides fade">
+                
+                <img src="dostawa.png" style="width:150px; height: 100px;" class="ban">
+                
+              </div>
+              
+              <div class="mySlides fade">
+                
+                <img src="gwarancja.png" style="width:150px; height: 100px;" class="ban">
+                
+              </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  slides[slideIndex-1].style.display = "block";  
+                  setTimeout(showSlides, 4000); // Change image every 2 seconds
+                }
+                </script>
+            
+            <div id="ikony" class="ban">
                 <i class="fa-solid fa-user fa-2xl"></i>
                 <i class="fa-solid fa-cart-shopping fa-2xl"></i>
             </div>
@@ -46,9 +74,46 @@
     </header>
     <section>
         <section id="oferty" class="oferty">
-            <img src="oferta1.jpg" id="oferta1" alt="oferta1" width="1200px" height="600px">
-            <img src="oferta2.png" id="oferta2" alt="oferta1" width="1200px" height="600px">
-            <img src="oferta3.jpg" id="oferta3" alt="oferta1" width="1200px" height="600px">
+
+            <div class="oferta fade">
+                <img src="oferta1.jpg" style="width:1200px; height: 600px;" class="of"> 
+              </div>
+              
+              <div class="oferta fade">
+                <img src="oferta2.png" style="width:1200px; height: 600px;" class="of">
+              </div>
+
+              <div class="oferta fade">
+                <img src="oferta3.jpg" style="width:1200px; height: 600px;" class="of">
+              </div>
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+
+            <script>
+                let slideIdx = 0;
+                showOfs();
+                
+                function showOfs() {
+                  let i;
+                  let slide = document.getElementsByClassName("oferta");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slide.length; i++) {
+                    slide[i].style.display = "none";  
+                  }
+                  slideIdx++;
+                  if (slideIdx > slide.length) {slideIdx = 1}   
+                  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  } 
+                  slide[slideIdx-1].style.display = "block"; 
+                  dots[slideIdx-1].className += " active"; 
+                  setTimeout(showOfs, 4000); // Change image every 2 seconds
+                }
+                </script>
+        
         </section>
         <section class="diety">
             <h2>Poznaj</h2>
