@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myFunction(){
+            let a=document.getElementById("masa");
+            let b=document.getElementById("wzrost");
+            let c=document.getElementById("wiek");
+            let wynikkobieta = 699.1+(9.567*a.value)+(1.85*b.value)-(4.68*c.value);
+            let wynikmezczyzna = 66.47+(13.7*a.value)+(5*b.value)-(6.76*c.value);
+            if ((kobieta.checked)&&(brak_aktywnosci.selected)) {
+                document.getElementById("wynik").innerHTML="Twoje wymagane dzienne zapotrzebowanie kaloryczne wynosi: " + Number(Math.round(wynikkobieta*1.2)) + " kcal";
+            } 
+            if ((kobieta.checked)&&(niska.selected)) {
+                document.getElementById("wynik").innerHTML="Twoje wymagane dzienne zapotrzebowanie kaloryczne wynosi: " + Number(Math.round(wynikkobieta*1.5)) + " kcal";
+            }
+            if ((kobieta.checked)&&(srednia.selected)) {
+                document.getElementById("wynik").innerHTML="Twoje wymagane dzienne zapotrzebowanie kaloryczne wynosi: " + Number(Math.round(wynikkobieta*1.75)) + " kcal";
+            }
+            if ((kobieta.checked)&&(wysoka.selected)) {
+                document.getElementById("wynik").innerHTML="Twoje wymagane dzienne zapotrzebowanie kaloryczne wynosi: " + Number(Math.round(wynikkobieta*2)) + " kcal";
+            }
+            if ((mezczyzna.checked)&&(brak_aktywnosci.selected)) {
+                document.getElementById("wynik").innerHTML="Twoje wymagane dzienne zapotrzebowanie kaloryczne wynosi: " + Number(Math.round(wynikkobieta*1.2)) + " kcal";
+            }
+            if ((mezczyzna.checked)&&(niska.selected)) {
+                document.getElementById("wynik").innerHTML="Twoje wymagane dzienne zapotrzebowanie kaloryczne wynosi: " + Number(Math.round(wynikkobieta*1.5)) + " kcal";
+            }
+            if ((mezczyzna.checked)&&(srednia.selected)) {
+                document.getElementById("wynik").innerHTML="Twoje wymagane dzienne zapotrzebowanie kaloryczne wynosi: " + Number(Math.round(wynikkobieta*1.75)) + " kcal";
+            }
+            if ((mezczyzna.checked)&&(wysoka.selected)) {
+                document.getElementById("wynik").innerHTML="Twoje wymagane dzienne zapotrzebowanie kaloryczne wynosi: " + Number(Math.round(wynikkobieta*2)) + " kcal";
+            }
+        }
+        
+
+    </script>
+    <form>
+        <input type="radio" id="kobieta" name="plec" value="Kobieta" checked>Kobieta
+        <input type="radio" id="mezczyzna" name="plec" value="mezczyzna">Męzczyzna
+    </form>
+        
+    <label for="wiek">Wiek:</label>
+    <input type="text" id="wiek" name="wiek">
+    <label for="aktywnosc">Twoja aktywność:</label>
+    <select name="aktywnosc" id="aktywnosc" >
+      <option id="wybierz" value="wybierz">Wybierz</option>
+      <option id="brak_aktywnosci" value="brak_aktywnosci">Brak aktywności</option>
+      <option id="niska" value="niska">Niska aktywność fizyczna (1-2 razy w tygodniu)</option>
+      <option id="srednia" value="srednia">Średnia aktywność fizyczna (3-4 razy w tygodniu)</option>
+      <option id="wysoka" value="wysoka">Wysoka aktywność fizyczna (min. 5 razy w tygodniu)</option>
+    </select>
+    <label id="smasa" for="masa">Podaj mase ciała [kg]</label>
+    <input type="text" id="masa" name="masa"><br>
+    <label id="swzrost" for="wzrost">Podaj swój wzrost [cm]</label><br>
+    <input type="text" id="wzrost" name="wzrost"><br>
+    <input type="button" id="b1" value="Oblicz" onclick="myFunction()">
+    <label id="wynik" for="wynik"></label>
+    
+</body>
+</html>

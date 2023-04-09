@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myFunction(){
+            let a=document.getElementById("masa");
+            let b=document.getElementById("wzrost");
+            let c=document.getElementById("wiek");
+            let wynikkobieta = 699.1+(9.567*a.value)+(1.85*b.value)-(4.68*c.value);
+            let wynikmezczyzna = 66.47+(13.7*a.value)+(5*b.value)-(6.76*c.value);
+            if (kobieta.checked) {
+                document.getElementById("wynik").innerHTML="Twoje minimalne zapotrzebowanie kaloryczne wynosi: " + Number(Math.round(wynikkobieta)) + " kcal";
+            } 
+            else{
+                document.getElementById("wynik").innerHTML="Twoje minimalne zapotrzebowanie kaloryczne wynosi: " + Number(Math.round(wynikmezczyzna)) + " kcal";
+            }
+
+            
+            
+
+        }
+        
+
+    </script>
+    <form>
+        <input type="radio" id="kobieta" name="plec" value="Kobieta" checked>Kobieta
+        <input type="radio" id="mezczyzna" name="plec" value="mezczyzna">Męzczyzna
+    </form>
+        
+    <label for="wiek">Wiek:</label>
+    <input type="text" id="wiek" name="wiek">
+    <label id="smasa" for="masa">Podaj mase ciała [kg]</label>
+    <input type="text" id="masa" name="masa"><br>
+    <label id="swzrost" for="wzrost">Podaj swój wzrost [cm]</label><br>
+    <input type="text" id="wzrost" name="wzrost"><br>
+    <input type="button" id="b1" value="Oblicz" onclick="myFunction()">
+    <label id="wynik" for="wynik"></label>
+    
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+    <script>
+        function myFunction(){
+            let a=document.getElementById("masa");
+            let b=document.getElementById("wzrost");
+            let wynik=a.value/(b.value*b.value);
+            document.getElementById("wynik").innerHTML="Twoje BMI wynosi: " + Number(Math.round(wynik + 'e+2') + 'e-2');
+            if(wynik<16){
+                document.getElementById("norma").innerHTML="wygłodzenie";
+            }
+            if ((wynik>=16)&&(wynik<17)) {
+                document.getElementById("norma").innerHTML="wychudzenie";
+            }
+            if ((wynik>=17)&&(wynik<=18.49)) {
+                document.getElementById("norma").innerHTML="niedowaga";
+            }
+            if ((wynik>=18.5)&&(wynik<=24.99)) {
+                document.getElementById("norma").innerHTML="wartość prawidłowa";
+            }
+            if ((wynik>=25)&&(wynik<=25.99)) {
+                document.getElementById("norma").innerHTML="nadwaga";
+            }
+            if ((wynik>=30)&&(wynik<=34.99)) {
+                document.getElementById("norma").innerHTML="otyłość I stopnia";
+            }
+            if ((wynik>=35)&&(wynik<=39.99)) {
+                document.getElementById("norma").innerHTML="otyłość II stopnia";
+            }
+            if (wynik>=40) {
+                document.getElementById("norma").innerHTML="skrajna otyłość";
+            }
+
+        }
+        
+
+    </script>
+    <label id="smasa" for="masa">Podaj mase ciała [kg]</label><br>
+    <input type="text" id="masa" name="masa"><br>
+    <label id="swzrost" for="wzrost">Podaj swój wzrost [m]</label><br>
+    <input type="text" id="wzrost" name="wzrost"><br>
+    <input type="button" id="b1" value="Oblicz" onclick="myFunction()">
+    <label id="wynik" for="wynik"></label>
+    <label id="norma"></label>
+</body>
+</html>

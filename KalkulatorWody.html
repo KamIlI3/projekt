@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Wody</title>
+</head>
+<body>
+
+    <script>
+        function myFunction(){
+            var a=document.getElementById("masa");
+            var wynik=a.value*40;
+            document.getElementById("wynik").innerHTML=wynik+" ml";
+
+        }
+        
+
+    </script>
+    <label id="fname" for="masa">Podaj mase ciała [kg]</label><br>
+    <input type="text" id="masa" name="masa"><br>
+    <input type="button" id="b1" value="Oblicz" onclick="myFunction()">
+    <label id="wynik" for="wynik"></label>
+</body>
+</html>
