@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Kalam:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styl.css">
+    <title>Projekt</title>
+</head>
+<body>
+    <header>
+        <section class="baner">
+            <img src="logo.png" id="logo" class="ban" alt="logo" width="200px" height="100px">
+
+            <div class="mySlides fade">
+                
+                <img src="dostawa.png" style="width:150px; height: 100px;" class="ban">
+                
+              </div>
+              
+              <div class="mySlides fade">
+                
+                <img src="gwarancja.png" style="width:150px; height: 100px;" class="ban">
+                
+              </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  slides[slideIndex-1].style.display = "block";  
+                  setTimeout(showSlides, 4000); // Change image every 2 seconds
+                }
+                </script>
+            
+            <div id="ikony" class="ban">
+                <i class="fa-solid fa-user fa-2xl"></i>
+                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+            </div>
+            
+        </section>
+        <nav id="menu">
+            <nav>
+                <div id="menu1">
+                    <a href="" id="onas"><b>O nas</b></a>
+                <a href=""><b>Diety</b></a>
+                <a href=""><b>Menu</b></a>
+                <a href="" id="od"><b>Obszar Dostaw</b></a>
+                <a href=""><b>Kalkulator</b></a>
+                <a href=""><b>Blog</b></a>
+                <a href=""><b>Kontakt</b></a>
+                <input type="button" value="Zamów" id="b1"> 
+                </div>
+                   
+            </nav>
+
+        </nav>
+    </header>
+    <section id="kalk">
+        <h2>Kalkulatory</h2>
+        <div class="kalkulatory" id="kal1">
+            <img src="calc-woda.jpg" alt="butelka_wody" height="200px" width="200px">
+            <div class="h2ip">
+                <h2 class="h2srodek">Kalkulator wody</h2>
+            <p class="p2srodek">Kalkulator wody na podstawie podanej masy ciała określa łączną ilość płynów pochodzącą z wody,
+                 napojów oraz posiłków, którą należy dostarczyć do organizmu w ciągu dnia w celu jego prawidłowego funkcjonowania.*
+                *Kalkulator nie uwzględnia zmiennych związanych ze stosowaniem specjalistycznej diety, temperaturą powietrza oraz aktywnością fizyczną.</p>
+            </div>
+                <input type="button" onclick="window.open('KalkulatorWody.html', '_self')" value="Zobacz Kalkulator" class="zk">
+        </div>
+        <div class="kalkulatory" id="kal2">
+            <img src="biceps.jpg" alt="biceps" height="200px" width="200px">
+            <div class="h2ip"><h2 class="h2srodek">Kalkulator Całkowitej Przemiany Materii (CPM)</h2>
+                <p class="p2srodek">Określa całkowitą ilość energii, którą organizm potrzebuje na pokrycie wydatków związanych z podstawową przemianą materii
+                     oraz codzienną aktywnością związaną z trybem pracy lub nauki oraz wysiłkiem fizycznym. 
+                     Spożywanie ilości kilokalorii wyliczonej za pomocą kalkulatora CPM zapewnia utrzymanie aktualnej masy ciała.*/**
+                    *stosowane w odniesieniu do osób powyżej 18 roku życia
+                    **Uzyskane dane są szacunkowe, ponieważ nie uwzględniają indywidualnych zmiennych takich jak np. skład ciała, 
+                    rodzaj i intensywność aktywności fizycznej, występowanie chorób przewlekłych, które znacząco mogą wpływać na wartość wyniku</p>
+                </div>
+                <input type="button" onclick="window.open('KalkulatorCPM.html', '_self')" value="Zobacz Kalkulator" class="zk">
+        </div>
+        <div class="kalkulatory" id="kal3">
+            <img src="waga.jpg" alt="biceps" height="200px" width="200px">
+            <div class="h2ip"><h2 class="h2srodek">Kalkulator BMI</h2>
+                <p class="p2srodek">wskaźnik określający, czy aktualna masa ciała jest prawidłowa w stosunku do wzrostu. Pozwala na sklasyfikowanie do poszczególnych kategorii takich jak: 
+                    wygłodzenie, wychudzenie, niedowaga, pożądana masa ciała, nadwaga czy otyłość I, II lub III stopnia. 
+                    Otrzymany wynik jest poglądowy i nie uwzględnia indywidualnych różnic w budowie i składzie ciała (np. ciąża, kulturystyczny typ budowy ciała).*
+                    *stosowane w odniesieniu do osób powyżej 18 roku życia</p>
+                </div>
+                <input type="button" onclick="window.open('KalkulatorBMI.html', '_self')" value="Zobacz Kalkulator" class="zk">
+        </div>
+        <div class="kalkulatory" id="kal4">
+            <img src="talia.jpg" alt="biceps" height="200px" width="200px">
+            <div class="h2ip"><h2 class="h2srodek">Kalkulator Podstawowej Przemiany Materii (PPM)</h2>
+                <p class="p2srodek">Określa minimum energii potrzebnej organizmowi do podtrzymywania podstawowych funkcji życiowych takich jak oddychanie, 
+                    praca układu sercowo - naczyniowego czy termoregulacja. Nie jest to całkowita liczba kilokalorii, którą powinniśmy spożyć w ciągu dnia, 
+                    ponieważ nie uwzględnia żadnych podejmowanych codziennych aktywności związanych z trybem pracy lub nauki oraz wysiłkiem fizycznym.*
+                    *stosowane w odniesieniu do osób powyżej 18 roku życia</p>
+                </div>
+                <input type="button" onclick="window.open('KalkulatorPPM.html', '_self')" value="Zobacz Kalkulator" class="zk" >
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="minimenu">
+            <div id="minimenu1">
+                <p class="mm"><b>menu</b></p>
+            
+                <a href="">Promocje</a>
+                <br>
+                <br>
+                <a href="">Dlaczego my</a>
+                <br>
+                <br>
+                <a href="">Diety</a>
+                <br>
+                <br>
+                <a href="">Cennik</a>
+                <br>
+                <br>
+                <a href="">Kalkulatory</a>
+                <br>
+                <br>
+                <a href="">Blog</a>
+        </div>
+        <div id="minimenu2">
+            <a href="">Eko</a>
+            <br>
+            <br>
+            <a href="">Zamów online</a>
+            <br>
+            <br>
+            <a href="">FAQ</a>
+            <br>
+            <br>
+            <a href="">Metody dostawy</a>
+            <br>
+            <br>
+            <a href="">Regulamin</a>
+            <br>
+            <br>
+            <a href="">Kontakt</a>
+        </div>
+        </div>
+        <div id="platnosc">
+            <p class="mm"><b>metody płatności</b></p>
+            <img src="Przelewy24.png" class="platnosci" alt="przelewy24" height="40px" width="60px">
+            <img src="blik.png" class="platnosci" alt="blik" height="40px" width="60px">
+            <img src="visa.png" class="platnosci" alt="visa" height="40px" width="60px">
+            <img src="electron-40.png" class="platnosci" alt="electron-40" height="40px" width="60px">
+            <br>
+            <img src="mastercard.png" class="platnosci" alt="mastercard" height="30px" width="50px">
+            <img src="maestro.png" class="platnosci" alt="maestro" height="30px" width="50px">
+            <img src="3dsec.png" class="platnosci" alt="3dsec" height="30px" width="50px">
+            <img src="alliorbank.png" class="platnosci" alt="alliorbank" height="30px" width="50px">
+        </div>
+        <div id="sociale">
+            <p class="mm" id="mm"><b>social media</b></p>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+            <a href="https://www.tiktok.com/pl-PL/" target="_blank"><i class="fa-brands fa-tiktok fa-2xl"></i></a>     
+        </div>
+    </footer>
+    
+</body>
+</html>

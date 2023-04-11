@@ -145,7 +145,7 @@ body{
    width: 500px;
    justify-content: center;
 }
-.dsw, #zw{
+.dsw, #zw, .zk{
    background-color: white;
     border: 2px solid black;
     height: 50px;
@@ -235,8 +235,25 @@ font-family: 'Kalam', cursive;
    font-size: 1.5rem;
    margin-bottom: 20px;
 }
+#kalk{
+   width: 60%;
+   margin-left: 380px;
+}
+.kalkulatory{
 
-
+   padding: 30px;
+   border: 5px solid goldenrod;
+   margin: 20px;
+   display: grid;
+   grid-template-columns: auto auto auto;
+}
+.zk{
+   margin-top: 40%;
+}
+.h2ip{
+   margin: 0 20px 0 20px;
+   text-align: start;
+}
 
  
  
