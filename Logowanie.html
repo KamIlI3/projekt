@@ -72,50 +72,52 @@
 
         </nav>
     </header>
-    <section id="kalk">
-        <h2 id="h2kalk">Kalkulatory</h2>
-        <div class="kalkulatory" id="kal1">
-            <img src="calc-woda.jpg" alt="butelka_wody" height="200px" width="200px">
-            <div class="h2ip">
-                <h2 class="h2srodek">Kalkulator wody</h2>
-            <p class="p2srodek">Kalkulator wody na podstawie podanej masy ciała określa łączną ilość płynów pochodzącą z wody,
-                 napojów oraz posiłków, którą należy dostarczyć do organizmu w ciągu dnia w celu jego prawidłowego funkcjonowania.*
-                *Kalkulator nie uwzględnia zmiennych związanych ze stosowaniem specjalistycznej diety, temperaturą powietrza oraz aktywnością fizyczną.</p>
-            </div>
-                <input type="button" onclick="window.open('KalkulatorWody.html', '_self')" value="Zobacz Kalkulator" class="zk">
+    <section>
+        <div id="logowanie">
+            <h2 class="h2srodek">Jesteś już użytkownikiem?</h2>
+            <form>
+                <input type="email" class="logowanie" name="logowanie" placeholder="EMAIL" ><br>
+                <input type="password" class="logowanie" name="logowanie" placeholder="HASŁO" ><br>
+                <input type="submit" value="Zaloguj się >" id="zalogujp"><br>
+            </form>
+            <a href="">Nie pamiętam hasła</a><br>
+                <p>lub zaloguj się za pomocą:</p><br>
+                <img src="fb.png" alt="facebook" height="100px" width="100px" class="dodlogowanie">
+                <img src="google.png" alt="google" height="100px" width="100px" class="dodlogowanie">
         </div>
-        <div class="kalkulatory" id="kal2">
-            <img src="biceps.jpg" alt="biceps" height="200px" width="200px">
-            <div class="h2ip"><h2 class="h2srodek">Kalkulator Całkowitej Przemiany Materii (CPM)</h2>
-                <p class="p2srodek">Określa całkowitą ilość energii, którą organizm potrzebuje na pokrycie wydatków związanych z podstawową przemianą materii
-                     oraz codzienną aktywnością związaną z trybem pracy lub nauki oraz wysiłkiem fizycznym. 
-                     Spożywanie ilości kilokalorii wyliczonej za pomocą kalkulatora CPM zapewnia utrzymanie aktualnej masy ciała.*/**
-                    *stosowane w odniesieniu do osób powyżej 18 roku życia
-                    **Uzyskane dane są szacunkowe, ponieważ nie uwzględniają indywidualnych zmiennych takich jak np. skład ciała, 
-                    rodzaj i intensywność aktywności fizycznej, występowanie chorób przewlekłych, które znacząco mogą wpływać na wartość wyniku</p>
+        <div id="przypomnienie">
+            <h2 class="h2srodek">Przypomnij hasło</h2>
+            <form>
+                <input type="email" class="logowanie" id="przypomnienie_hasła" name="przypomnienie" placeholder="EMAIL"><br>
+                <input type="submit" value="Wyślij >" name="przypomnienie_hasła" id="przypomnijp"><br>
+                <a href="">Wróć do logowania</a>
+
+
+            </form>
+        </div>
+        <div id="rejestracja">
+            <h2 class="h2srodek">Jesteś tu pierwszy raz?<br>Zarejestruj się</h2><br>
+            <a href="#">
+                <div id="za_pomoca_email" class="rejestracjadiv" id="rejestracjaemail">
+                    <img src="koperta.png" alt="koperta" width="20px" height="20px">
+                    <p>Za pomocą e-mail</p>
                 </div>
-                <input type="button" onclick="window.open('KalkulatorCPM.html', '_self')" value="Zobacz Kalkulator" class="zk">
+                </a><br>
+                <a href="#">
+                    <div id="za_pomoca_fb" class="rejestracjadiv" itemid="rejestracjafb">
+                        <img src="fbikona.png" alt="fb" width="20px" height="20px">
+                        <p>Za pomocą konta Facebook</p>
+                    </div>
+                    </a><br>
+                    <a href="#">
+                        <div id="za_pomoca_fb" class="rejestracjadiv" itemid="rejestracjagoogle">
+                            <img src="googleikona.png" alt="google" width="20px" height="20px">
+                            <p>Za pomocą konta Google</p>
+                        </div>
+                        </a>
+
         </div>
-        <div class="kalkulatory" id="kal3">
-            <img src="waga.jpg" alt="biceps" height="200px" width="200px">
-            <div class="h2ip"><h2 class="h2srodek">Kalkulator BMI</h2>
-                <p class="p2srodek">wskaźnik określający, czy aktualna masa ciała jest prawidłowa w stosunku do wzrostu. Pozwala na sklasyfikowanie do poszczególnych kategorii takich jak: 
-                    wygłodzenie, wychudzenie, niedowaga, pożądana masa ciała, nadwaga czy otyłość I, II lub III stopnia. 
-                    Otrzymany wynik jest poglądowy i nie uwzględnia indywidualnych różnic w budowie i składzie ciała (np. ciąża, kulturystyczny typ budowy ciała).*
-                    *stosowane w odniesieniu do osób powyżej 18 roku życia</p>
-                </div>
-                <input type="button" onclick="window.open('KalkulatorBMI.html', '_self')" value="Zobacz Kalkulator" class="zk">
-        </div>
-        <div class="kalkulatory" id="kal4">
-            <img src="talia.jpg" alt="biceps" height="200px" width="200px">
-            <div class="h2ip"><h2 class="h2srodek">Kalkulator Podstawowej Przemiany Materii (PPM)</h2>
-                <p class="p2srodek">Określa minimum energii potrzebnej organizmowi do podtrzymywania podstawowych funkcji życiowych takich jak oddychanie, 
-                    praca układu sercowo - naczyniowego czy termoregulacja. Nie jest to całkowita liczba kilokalorii, którą powinniśmy spożyć w ciągu dnia, 
-                    ponieważ nie uwzględnia żadnych podejmowanych codziennych aktywności związanych z trybem pracy lub nauki oraz wysiłkiem fizycznym.*
-                    *stosowane w odniesieniu do osób powyżej 18 roku życia</p>
-                </div>
-                <input type="button" onclick="window.open('KalkulatorPPM.html', '_self')" value="Zobacz Kalkulator" class="zk" >
-        </div>
+        
     </section>
 
     
