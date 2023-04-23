@@ -62,7 +62,7 @@ body{
     color: black;
     padding: 10px 0 10px 0;
   }
- #b1{
+ #b1, #zalogujp{
     background-color: tomato;
     height: 50px;
     width: 130px;
@@ -261,6 +261,23 @@ font-family: 'Kalam', cursive;
    text-align: start;
    margin-left: 2%;
    color: black;
+}
+#logowanie{
+   width: 90%;
+}
+#przypomnienie{
+   
+}
+#rejestracja{
+   background-color: gainsboro;
+   width: 90%;
+}
+#logsection{
+  margin-left: 300px;
+  margin-top: 40px;
+   width: 70%;
+   display: grid;
+   grid-template-columns: auto auto;
 }
 
  
