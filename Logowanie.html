@@ -10,15 +10,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Kalam:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styl.css">
     <title>Projekt</title>
-</head>
+    
 <body>
     <header>
         <section class="baner">
-            <img src="logo.png" id="logo" class="ban" alt="logo" width="200px" height="100px">
+            <a href="Projekt.html"><img src="logo.png" id="logo" class="ban" alt="logo" width="200px" height="100px"></a>
+            
 
             <div class="mySlides fade">
                 
@@ -50,7 +50,7 @@
                 </script>
             
             <div id="ikony" class="ban">
-                <i class="fa-solid fa-user fa-2xl"></i>
+                <a href="Logowanie.html"><i class="fa-solid fa-user fa-2xl"></i></a>
                 <i class="fa-solid fa-cart-shopping fa-2xl"></i>
             </div>
             
@@ -58,11 +58,11 @@
         <nav id="menu">
             <nav>
                 <div id="menu1">
-                    <a href="" id="onas"><b>O nas</b></a>
+                    <a href="Onas.html" id="onas"><b>O nas</b></a>
                 <a href=""><b>Diety</b></a>
                 <a href=""><b>Menu</b></a>
                 <a href="" id="od"><b>Obszar Dostaw</b></a>
-                <a href=""><b>Kalkulator</b></a>
+                <a href="Kalkulatory.html"><b>Kalkulator</b></a>
                 <a href=""><b>Blog</b></a>
                 <a href=""><b>Kontakt</b></a>
                 <input type="button" value="Zamów" id="b1"> 
@@ -73,28 +73,19 @@
         </nav>
     </header>
     <section id="logsection">
-        <div id="logowanie">
+        <div id="logowanie" class="log">
             <h2 class="h2srodek">Jesteś już użytkownikiem?</h2>
             <form>
                 <input type="email" class="logowanie" name="logowanie" placeholder="EMAIL" ><br>
                 <input type="password" class="logowanie" name="logowanie" placeholder="HASŁO" ><br>
                 <input type="submit" value="Zaloguj się >" id="zalogujp"><br>
             </form>
-            <a href="">Nie pamiętam hasła</a><br>
+            <a href="Przypomnienie.html" id="aprzypomnienie">Nie pamiętam hasła</a><br>
                 <p>lub zaloguj się za pomocą:</p><br>
-                <a href="#"><img src="fb.png" alt="facebook" height="100px" width="100px" class="dodlogowanie"></a>
-                <a href="#"><img src="google.png" alt="google" height="100px" width="100px" class="dodlogowanie"></a>
+                <a href="facebook.com"><img src="fb.png" alt="facebook" height="100px" width="100px" class="dodlogowanie"></a>
+                <a href="google.com"><img src="google.png" alt="google" height="100px" width="100px" class="dodlogowanie"></a>
         </div>
-        <!--<div id="przypomnienie">
-            <h2 class="h2srodek">Przypomnij hasło</h2>
-            <form>
-                <input type="email" class="logowanie" id="przypomnienie_hasła" name="przypomnienie" placeholder="EMAIL"><br>
-                <input type="submit" value="Wyślij >" name="przypomnienie_hasła" id="przypomnijp"><br>
-                <a href="">Wróć do logowania</a>
-
-
-            </form>
-        </div>-->
+        
         <div id="rejestracja">
             <h2 class="h2srodek">Jesteś tu pierwszy raz?<br>Zarejestruj się</h2><br>
             <a href="#">

@@ -224,9 +224,6 @@ font-family: 'Kalam', cursive;
    border: 1px solid gray;
    padding: 5px;   
 }
-#platnosc{
-   
-}
 #sociale{
    word-spacing: 20px;
 }
@@ -265,9 +262,6 @@ font-family: 'Kalam', cursive;
 #logowanie{
    width: 90%;
 }
-#przypomnienie{
-   
-}
 #rejestracja{
    background-color: gainsboro;
    width: 90%;
@@ -279,6 +273,32 @@ font-family: 'Kalam', cursive;
    display: grid;
    grid-template-columns: auto auto;
 }
-
+#przypomnienie{
+   width: 90%;
+}
+#o_nas{
+   width: 70%;
+   justify-content: center;
+   margin-left: 300px;
+}
+.o_nas{
+   display: grid;
+   grid-template-columns: auto auto;
+   color: black;
+}
+#zespol{
+   z-index: -1;
+   position: absolute;
+}
+#zespol_opis{
+   z-index: 0;
+   margin-top: 50px;
+   position: relative;
+   width: 50%;
+   margin-left: 700px;
+   padding: 70px;
+   text-align: start;
+    background-color: white;
+   }
  
  
