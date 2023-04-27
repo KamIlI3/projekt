@@ -279,26 +279,56 @@ font-family: 'Kalam', cursive;
 #o_nas{
    width: 70%;
    justify-content: center;
-   margin-left: 300px;
+   margin-left: 250px;
 }
 .o_nas{
    display: grid;
    grid-template-columns: auto auto;
    color: black;
+   margin: 120px;
 }
-#zespol{
+#zespol_zdj, #atmosfera_zdj{
    z-index: -1;
    position: absolute;
 }
-#zespol_opis{
+#zespol_opis, #atmosfera_opis{
    z-index: 0;
-   margin-top: 50px;
-   position: relative;
-   width: 50%;
-   margin-left: 700px;
+   margin-top: 70px;
+   font-size: 85%;
+   width: 35%;
+   margin-left: 650px;
    padding: 70px;
    text-align: start;
     background-color: white;
+    
    }
- 
- 
+
+#szczegoly_opis{
+z-index: 0;
+font-size: 85%;
+background-color: white;
+text-align: start;
+margin-top: 50px;
+padding: 40px;
+width: 115%;
+height: 70%;
+}
+#szczegoly_zdj{
+z-index: -1;
+position: relative;
+}
+#kontakt_section{
+   width: 70%;
+   margin-left: 300px;
+}
+#oddziały{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   text-align: start;
+}
+pre::first-letter{
+   color: goldenrod;
+}
+#p_i_h3{
+   text-align: start;
+}

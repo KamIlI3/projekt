@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Kalam:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styl.css">
+    <title>Projekt</title>
+</head>
+<body>
+    <header>
+        <section class="baner">
+            <a href="Projekt.html"><img src="logo.png" id="logo" class="ban" alt="logo" width="200px" height="100px"></a>
+            
+
+            <div class="mySlides fade">
+                
+                <img src="dostawa.png" style="width:150px; height: 100px;" class="ban">
+                
+              </div>
+              
+              <div class="mySlides fade">
+                
+                <img src="gwarancja.png" style="width:150px; height: 100px;" class="ban">
+                
+              </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  slides[slideIndex-1].style.display = "block";  
+                  setTimeout(showSlides, 4000); // Change image every 2 seconds
+                }
+                </script>
+            
+            <div id="ikony" class="ban">
+                <a href="Logowanie.html"><i class="fa-solid fa-user fa-2xl"></i></a>
+                
+                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+            </div>
+            
+        </section>
+        <nav id="menu">
+                <div id="menu1">
+                    <a href="Onas.html" id="onas"><b>O nas</b></a>
+                <a href="Diety.html"><b>Diety</b></a>
+                <a href="Menu.html"><b>Menu</b></a>
+                <a href="Obszar_Dostaw.html" id="od"><b>Obszar Dostaw</b></a>
+                <a href="Kalkulatory.html"><b>Kalkulator</b></a>
+                <a href="Blog.html"><b>Blog</b></a>
+                <a href="Kontakt.html"><b>Kontakt</b></a>
+                <input type="button" value="Zamów" id="b1"> 
+                </div>
+        </nav>
+    </header>
+    <section id="kontakt_section">
+        <h1>Kontakt</h1>
+        <h2>. . . . . </h2>
+        <section id="p_i_h3">
+            <p>Zapraszamy do kontaktu z naszym Biurem Obsługi Klienta <b>od poniedziałku do piątku</b> w godzinach <b>6:00 – 18:00, w soboty</b> od godziny <b>6:00 do 14:00</b> 
+                oraz <b>w niedziele</b> od godziny <b>10:00 do 14:00</b>.</p>
+                <h3><b>NASZE ODDZIAŁY:</b></h3>
+        </section>
+            <section id="oddziały">
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Warszawa</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Lodz.html"><h2>Łódź</h2></a>
+                <label for="tel_lodz"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_lodz"><pre><b>E: </b><a href="mailto:lodz@bodychief.pl">lodz@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Kraków</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Katowice</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Wrocław</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Trójmiasto</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Toruń</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Bydgoszcz</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Szczecin</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Gliwice</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Gorzów Wielkopolski</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Zielona Góra</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Koszalin</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Legnica</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Lubin</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Tychy</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Bielsko-Biała</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Kołobrzeg</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Białystok</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Opole</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Lublin</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Olsztyn</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Słupsk</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Płock</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Częstochowa</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Zakopane</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Poznań</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Kalisz</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Rzeszów</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Leszno, Kościan, Śrem, Gostyń, Środa Wlkp.</h2></a>
+                <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
+                <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
+            </div>
+            </section>
+            
+    </section>
+    <footer>
+        <div class="minimenu">
+            <div id="minimenu1">
+                <p class="mm"><b>menu</b></p>
+            
+                <a href="">Promocje</a>
+                <br>
+                <br>
+                <a href="">Dlaczego my</a>
+                <br>
+                <br>
+                <a href="">Diety</a>
+                <br>
+                <br>
+                <a href="">Cennik</a>
+                <br>
+                <br>
+                <a href="">Kalkulatory</a>
+                <br>
+                <br>
+                <a href="">Blog</a>
+        </div>
+        <div id="minimenu2">
+            <a href="">Eko</a>
+            <br>
+            <br>
+            <a href="">Zamów online</a>
+            <br>
+            <br>
+            <a href="">FAQ</a>
+            <br>
+            <br>
+            <a href="">Metody dostawy</a>
+            <br>
+            <br>
+            <a href="">Regulamin</a>
+            <br>
+            <br>
+            <a href="">Kontakt</a>
+        </div>
+        </div>
+        <div id="platnosc">
+            <p class="mm"><b>metody płatności</b></p>
+            <img src="Przelewy24.png" class="platnosci" alt="przelewy24" height="40px" width="60px">
+            <img src="blik.png" class="platnosci" alt="blik" height="40px" width="60px">
+            <img src="visa.png" class="platnosci" alt="visa" height="40px" width="60px">
+            <img src="electron-40.png" class="platnosci" alt="electron-40" height="40px" width="60px">
+            <br>
+            <img src="mastercard.png" class="platnosci" alt="mastercard" height="30px" width="50px">
+            <img src="maestro.png" class="platnosci" alt="maestro" height="30px" width="50px">
+            <img src="3dsec.png" class="platnosci" alt="3dsec" height="30px" width="50px">
+            <img src="alliorbank.png" class="platnosci" alt="alliorbank" height="30px" width="50px">
+        </div>
+        <div id="sociale">
+            <p class="mm" id="mm"><b>social media</b></p>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+            <a href="https://www.tiktok.com/pl-PL/" target="_blank"><i class="fa-brands fa-tiktok fa-2xl"></i></a>     
+        </div>
+    </footer>
+    
+</body>
+</html>
