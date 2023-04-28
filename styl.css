@@ -321,7 +321,7 @@ position: relative;
    width: 70%;
    margin-left: 300px;
 }
-#oddziały{
+#oddziały, .rz_i_srem{
    display: grid;
    grid-template-columns: auto auto auto auto;
    text-align: start;
