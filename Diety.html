@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Kalam:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styl_diety.css">
+    <title>Projekt</title>
+</head>
+<body>
+    <header>
+        <section class="baner">
+            <a href="Projekt.html"><img src="logo.png" id="logo" class="ban" alt="logo" width="200px" height="100px"></a>
+            
+
+            <div class="mySlides fade">
+                
+                <img src="dostawa.png" style="width:150px; height: 100px;" class="ban">
+                
+              </div>
+              
+              <div class="mySlides fade">
+                
+                <img src="gwarancja.png" style="width:150px; height: 100px;" class="ban">
+                
+              </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  slides[slideIndex-1].style.display = "block";  
+                  setTimeout(showSlides, 4000); // Change image every 2 seconds
+                }
+                </script>
+            
+            <div id="ikony" class="ban">
+                <a href="Logowanie.html"><i class="fa-solid fa-user fa-2xl"></i></a>
+                
+                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+            </div>
+            
+        </section>
+        <nav id="menu">
+                <div id="menu1">
+                    <a href="Onas.html" id="onas"><b>O nas</b></a>
+                <a href="Diety.html"><b>Diety</b></a>
+                <a href="Menu.html"><b>Menu</b></a>
+                <a href="Obszar_Dostaw.html" id="od"><b>Obszar Dostaw</b></a>
+                <a href="Kalkulatory.html"><b>Kalkulator</b></a>
+                <a href="Blog.html"><b>Blog</b></a>
+                <a href="Kontakt.html"><b>Kontakt</b></a>
+                <input type="button" value="Zamów" id="b1"> 
+                </div>
+        </nav>
+    </header>
+    <section id="body">
+
+        <h2>Poznaj</h2>
+        <h3>diety Body Chief</h3>
+        <h2>. . . . .</h2>
+        <section id="zbior_diet">
+            <div class="diety" id="low_ig_vege">
+                <img src="low_ig_vege.png" alt="dieta low ig vege" height="200px" width="250px" class="zdjecia_diet">
+                <div class="div_diety"><b><h3>Dieta Low Ig Vege</h3></b>
+                <br>
+                <p>1000, 1250, 1500, 1750, 2000, 2500 kcal</p>
+                <input type="button" value="Zobacz dietę" class="button_zobacz_diete">
+                </div>
+            </div>
+            <div class="diety">
+                <img src="dieta2.png" alt="economy box" height="200px" width="250px" class="zdjecia_diet">
+                <div class="div_diety"><b><h3>Dieta Economy Box</h3></b>
+                <br>
+                <p>1200, 1500, 1900, 2200 kcal</p>
+                <input type="button" value="Zobacz dietę" class="button_zobacz_diete">
+            </div></div>
+            <div class="diety">
+                <img src="dieta3.png" alt="dieta 3 posiłki" height="200px" width="250px" class="zdjecia_diet">
+                <div class="div_diety"><b><h3>Dieta Wybór Menu 3 Posiłki</h3></b>
+                <br>
+                <p>900, 1100, 1300, 1450, 1700, 2100 kcal</p>
+                <input type="button" value="Zobacz dietę" class="button_zobacz_diete">
+            </div>
+            </div>
+            <div class="diety">
+                <img src="dieta4.png" alt="dieta 5 posiłków" height="200px" width="250px" class="zdjecia_diet">
+                <div class="div_diety"><b><h3>Dieta Wybór Menu 5 Posiłki</h3></b>
+                <br>
+                <p>1250, 1500, 1750, 2000, 2500, 3000 kcal</p>
+                <input type="button" value="Zobacz dietę" class="button_zobacz_diete">
+            </div>
+        
+      
+            <div class="diety">
+                <img src="If-lacoste_glutenfree.png" alt="dieta lacoste gluten free" height="200px" width="250px" class="zdjecia_diet">
+                <div class="div_diety"><b><h3>Dieta IF Lactose & Gluten Free</h3></b>
+                <br>
+                <p>1250, 1500, 1750, 2000 kcal</p>
+                <input type="button" value="Zobacz dietę" class="button_zobacz_diete">
+            </div>
+            <div class="diety">
+                <img src="dieta_if_vegan.png" alt="dieta if vegan" height="200px" width="250px" class="zdjecia_diet">
+                <div class="div_diety"><b><h3>Dieta IF Vegan</h3></b>
+                <br>
+                <p>1250, 1500, 1750, 2000 kcal</p>
+                <input type="button" value="Zobacz dietę" class="button_zobacz_diete">
+            </div>
+            <div class="diety">
+                <img src="dieta_vegan.png" alt="dieta vegan" height="200px" width="250px" class="zdjecia_diet">
+                <div class="div_diety"><b><h3>Dieta Vegan</h3></b>
+                <br>
+                <p>1000, 1250, 1500, 1750, 2000, 2500 kcal</p>
+                <input type="button" value="Zobacz dietę" class="button_zobacz_diete">
+            </div>
+            <div class="diety">
+                <img src="dieta_standard.png" alt="dieta standard" height="200px" width="250px" class="zdjecia_diet">
+                <div class="div_diety"><b><h3>Dieta Standard</h3></b>
+                <br>
+                <p>1000, 1250, 1500, 1750, 2000, 2500 kcal</p>
+                <input type="button" value="Zobacz dietę" class="button_zobacz_diete">
+            </div>  
+        </div>  
+    </section>
+         </section>
+        
+
+    <footer>
+        <div class="minimenu">
+            <div id="minimenu1">
+                <p class="mm"><b>menu</b></p>
+            
+                <a href="">Promocje</a>
+                <br>
+                <br>
+                <a href="">Dlaczego my</a>
+                <br>
+                <br>
+                <a href="">Diety</a>
+                <br>
+                <br>
+                <a href="">Cennik</a>
+                <br>
+                <br>
+                <a href="">Kalkulatory</a>
+                <br>
+                <br>
+                <a href="">Blog</a>
+        </div>
+        <div id="minimenu2">
+            <a href="">Eko</a>
+            <br>
+            <br>
+            <a href="">Zamów online</a>
+            <br>
+            <br>
+            <a href="">FAQ</a>
+            <br>
+            <br>
+            <a href="">Metody dostawy</a>
+            <br>
+            <br>
+            <a href="">Regulamin</a>
+            <br>
+            <br>
+            <a href="">Kontakt</a>
+        </div>
+        </div>
+        <div id="platnosc">
+            <p class="mm"><b>metody płatności</b></p>
+            <img src="Przelewy24.png" class="platnosci" alt="przelewy24" height="40px" width="60px">
+            <img src="blik.png" class="platnosci" alt="blik" height="40px" width="60px">
+            <img src="visa.png" class="platnosci" alt="visa" height="40px" width="60px">
+            <img src="electron-40.png" class="platnosci" alt="electron-40" height="40px" width="60px">
+            <br>
+            <img src="mastercard.png" class="platnosci" alt="mastercard" height="30px" width="50px">
+            <img src="maestro.png" class="platnosci" alt="maestro" height="30px" width="50px">
+            <img src="3dsec.png" class="platnosci" alt="3dsec" height="30px" width="50px">
+            <img src="alliorbank.png" class="platnosci" alt="alliorbank" height="30px" width="50px">
+        </div>
+        <div id="sociale">
+            <p class="mm" id="mm"><b>social media</b></p>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+            <a href="https://www.tiktok.com/pl-PL/" target="_blank"><i class="fa-brands fa-tiktok fa-2xl"></i></a>     
+        </div>
+    </footer>
+    
+</body>
+</html>
