@@ -103,7 +103,7 @@ body{
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 60%;
-   margin-left: 150px;
+    margin-left: 150px;
  }
  .div_diety{
     z-index: -1;
@@ -119,10 +119,10 @@ margin-left: 100px;
     z-index: 2;
     position: relative;
  }
- .button_zobacz_diete{
+ .button_zobacz_menu{
     background-color: white;
-    border-color: crimson;
-    color: crimson;
+    border-color: dark;
+    color: dark;
      height: 50px;
      width: 130px;
  }
