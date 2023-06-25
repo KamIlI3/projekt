@@ -53,7 +53,8 @@
             <div id="ikony" class="ban">
                 <a href="Logowanie.html"><i class="fa-solid fa-user fa-2xl"></i></a>
                 
-                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                <a href="Koszyk.html"><i class="fa-solid fa-cart-shopping fa-2xl"></i></a>
+                
             </div>
             
         </section>
@@ -66,7 +67,7 @@
                 <a href="Kalkulatory.html"><b>Kalkulator</b></a>
                 <a href="Blog.html"><b>Blog</b></a>
                 <a href="Kontakt.html"><b>Kontakt</b></a>
-                <input type="button" value="Zamów" id="b1"> 
+                <a href="Menu.html"><input type="button" value="Zamów" id="b1"> </a>
                 </div>
         </nav>
     </header>
@@ -78,67 +79,76 @@
         <section id="zbior_diet">
             <div class="diety" id="low_ig_vege">
                 <img src="dieta_liv.png" alt="dieta low ig vege" height="200px" width="250px" class="zdjecia_diet">
-                <div class="div_diety"><b><h3>Dieta Low Ig Vege</h3></b>
+                <div class="div_diety"><b><h3 class="name">Dieta Low Ig Vege</h3></b>
                 <br>
                 <p>1000, 1250, 1500, 1750, 2000, 2500 kcal</p>
-                <input type="button" value="Zobacz Menu" class="button_zobacz_menu">
+                <input type="button" value="Dodaj do koszyka" class="button_zobacz_menu" onclick="addToCart('Dieta Low Ig Vege')">
                 </div>
             </div>
+        
             <div class="diety">
                 <img src="eco_box.png" alt="economy box" height="200px" width="250px" class="zdjecia_diet">
-                <div class="div_diety"><b><h3>Dieta Economy Box</h3></b>
+                <div class="div_diety"><b><h3 class="name">Dieta Economy Box</h3></b>
                 <br>
                 <p>1200, 1500, 1900, 2200 kcal</p>
-                <input type="button" value="Zobacz Menu" class="button_zobacz_menu">
+                <input type="button" value="Dodaj do koszyka" class="button_zobacz_menu" onclick="addToCart('Dieta Economy Box')">
             </div></div>
+
             <div class="diety">
                 <img src="3posilki.png" alt="dieta 3 posiłki" height="200px" width="250px" class="zdjecia_diet">
-                <div class="div_diety"><b><h3>Dieta Wybór Menu 3 Posiłki</h3></b>
+                <div class="div_diety"><b><h3 class="name">Dieta Wybór Menu 3 Posiłki</h3></b>
                 <br>
                 <p>900, 1100, 1300, 1450, 1700, 2100 kcal</p>
-                <input type="button" value="Zobacz Menu" class="button_zobacz_menu">
+                <input type="button" value="Dodaj do koszyka" class="button_zobacz_menu" onclick="addToCart('Dieta Wybór Menu 3 Posiłki')">
             </div>
             </div>
+
             <div class="diety">
                 <img src="5posilkow.png" alt="dieta 5 posiłków" height="200px" width="250px" class="zdjecia_diet">
-                <div class="div_diety"><b><h3>Dieta Wybór Menu 5 Posiłki</h3></b>
+                <div class="div_diety"><b><h3 class="name">Dieta Wybór Menu 5 Posiłki</h3></b>
                 <br>
                 <p>1250, 1500, 1750, 2000, 2500, 3000 kcal</p>
-                <input type="button" value="Zobacz menu" class="button_zobacz_menu">
+                <input type="button" value="Dodaj do koszyka" class="button_zobacz_menu" onclick="addToCart('Dieta Wybór Menu 5 Posiłki')">
                 </div>
             </div>
+
             <div class="diety">
                 <img src="If-lacoste_glutenfree.png" alt="dieta lacoste gluten free" height="200px" width="250px" class="zdjecia_diet">
-                <div class="div_diety"><b><h3>Dieta IF Lactose & Gluten Free</h3></b>
+                <div class="div_diety"><b><h3 class="name">Dieta IF Lactose & Gluten Free</h3></b>
                 <br>
                 <p>1250, 1500, 1750, 2000 kcal</p>
-                <input type="button" value="Zobacz menu" class="button_zobacz_menu">
+                <input type="button" value="Dodaj do koszyka" class="button_zobacz_menu" onclick="addToCart('Dieta IF Lactose & Gluten Free')">
                 </div>
             </div>
+
             <div class="diety">
                 <img src="dieta_if_vegan.png" alt="dieta if vegan" height="200px" width="250px" class="zdjecia_diet">
-                <div class="div_diety"><b><h3>Dieta IF Vegan</h3></b>
+                <div class="div_diety"><b><h3 class="name">Dieta IF Vegan</h3></b>
                 <br>
                 <p>1250, 1500, 1750, 2000 kcal</p>
-                <input type="button" value="Zobacz Menu" class="button_zobacz_menu">
+                <input type="button" value="Dodaj do koszyka" class="button_zobacz_menu" onclick="addToCart('Dieta IF Vegan')">
                 </div>
             </div>
+
             <div class="diety">
                 <img src="dieta_vegan.png" alt="dieta vegan" height="200px" width="250px" class="zdjecia_diet">
-                <div class="div_diety"><b><h3>Dieta Vegan</h3></b>
+                <div class="div_diety"><b><h3 class="name">Dieta Vegan</h3></b>
                 <br>
                 <p>1000, 1250, 1500, 1750, 2000, 2500 kcal</p>
-                <input type="button" value="Zobacz Menu" class="button_zobacz_menu">
+                <input type="button" value="Dodaj do koszyka" class="button_zobacz_menu" onclick="addToCart('Dieta Vegan')">
                 </div>
             </div>
+
             <div class="diety">
                 <img src="dieta_standard.png" alt="dieta standard" height="200px" width="250px" class="zdjecia_diet">
-                <div class="div_diety"><b><h3>Dieta Standard</h3></b>
+                <div class="div_diety"><b><h3 class="name">Dieta Standard</h3></b>
                 <br>
                 <p>1000, 1250, 1500, 1750, 2000, 2500 kcal</p>
-                <input type="button" value="Zobacz Menu" class="button_zobacz_menu">
+                <input type="button" value="Dodaj do koszyka" class="button_zobacz_menu" onclick="addToCart('Dieta Standard')">
             </div>  
-        </div>  
+        </div>
+    </div>
+    <script src="script.js"></script>
     </section>
          </section>
         

@@ -12,8 +12,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Kalam:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styl_economy_box.css">
+    <link rel="stylesheet" href="styl.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Projekt</title>
+    <script>
+          function getCityName() {
+    var name = "Warsaw"
+        $.ajax({
+            method: 'GET',
+            url: 'https://api.api-ninjas.com/v1/city?name=' + name,
+            headers: { 'X-Api-Key': 'HYevbONlupkElN0yiFLtKA==sZTjGwa0h7pidXtM'},
+            contentType: 'application/json',
+            success: function(result) {
+                console.log(result);
+            },
+            error: function ajaxError(jqXHR) {
+                console.error('Error: ', jqXHR.responseText);
+            }
+        });}
+        getCityName();
+    </script>
+
 </head>
 <body>
     <header>
@@ -70,56 +89,9 @@
                 </div>
         </nav>
     </header>
-    <section id="body">
-            <div id="img_desc">
-                <div id="square">
-                    <img src="dieta3.png" alt="Dieta-3Posilki" id="img_3posilki" height="450px" width="450px" >
-                
-            </div>
-            <div id="description">
-                <h1>Wybór Menu 3 Posiłki</h1>
-                <h2>900, 1100, 1300, 1450, 1700, 2100 kcal</h2>
-                <pre>                    Jeszcze więcej elastyczności w zestawie! Chcesz pozostać na diecie, a jednocześnie mieć
-                    wpływ na to, co ląduje na Twoim talerzu? Dieta WYBÓR MENU 3 POSIŁKI to rozwiązanie dla
-                    osób, które pragną poczuć się jak w restauracji i wybierać ulubione dania spośród propozycji
-                    naszego cateringu.
-
-                    Zastanawiasz się, jaka kaloryczność zestawu będzie dla Ciebie wystarczająca? Skorzystaj z
-                    kalkulatorów dostępnych na naszej stronie lub bezpłatnych konsultacji z naszymi dietetykami,
-                    którzy odpowiedzą na wszystkie Twoje pytania.</pre>
-                     </div>
-            </div>
-            
-
-                    <div id="prezentacja" style="margin-top: 40px;">
-                    
-                        <div >
-                            <h3>3 posiłkowa dieta z Wyborem Menu</h3>
-                            <p>W każdym z 3 posiłków masz możliwość wybrania z 4 zbilansowanych dań. <strong>Łącznie 72 propozycje każdego tygodnia gwarantują różnorodność codziennego menu oraz pewność, że na śniadanie, obiad i kolacje zjesz dokładnie to, na co masz apetyt!</strong></p>
-                            <p>Zestaw występuje w sześciu wariantach kalorycznych: około 900, 1100, 1300, 1450, 1700, 2100 kcal. Tak szeroki zakres pozwoli Ci na ułożenie diety odpowiadającej Twojemu zapotrzebowaniu energetycznemu i założonym celom.</p>
-                            </div>
-                            <div ><img src="Makaron linguine z sosem alfredo pieczona dynia i pomidorkami koktajlowymi.jpeg" alt="Makaron linguine z sosem alfredo, pieczona dynia i pomidorkami koktajlowymi" width="553" height="414"></div>
-                            <div ><img src="Dorsz po libansku z kasz bulgur i mini marchewk 2.jpg" alt="dorsz po libańsku" width="553" height="414"></div>
-                            <div >
-                            <h3>Przykładowe menu</h3>
-                            <ul  style="list-style-type: square;">
-                            <li>Śniadanie: Pasta fava ze słonecznikiem, żytnim pieczywem na zakwasie i pomidorem</li>
-                            <li>Obiad: Kurczak w sosie pieczarkowo – musztardowym z puree ziemniaczanym i sałatką szwedzką</li>
-                            <li>Kolacja: Sałatka tajska z warzywami w sosie fistaszkowym</li>
-                            </ul>
-                            
-                            </div>
-                            
-                        
-                        </div>
-                    
-
-                    
-                    
-                    
-         </section>
-        
-
+    <section>
+        <H1>BRAK ZAWARTOŚĆI</H1>
+    </section>
     <footer>
         <div class="minimenu">
             <div id="minimenu1">

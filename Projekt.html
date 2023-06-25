@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Kalam:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
+<script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styl.css">
     <title>Projekt</title>
@@ -53,7 +53,7 @@
             <div id="ikony" class="ban">
                 <a href="Logowanie.html"><i class="fa-solid fa-user fa-2xl"></i></a>
                 
-                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                <a href="Koszyk.html"><i class="fa-solid fa-cart-shopping fa-2xl"></i></a>
             </div>
             
         </section>
@@ -66,7 +66,7 @@
                 <a href="Kalkulatory.html"><b>Kalkulator</b></a>
                 <a href="Blog.html"><b>Blog</b></a>
                 <a href="Kontakt.html"><b>Kontakt</b></a>
-                <input type="button" value="Zamów" id="b1"> 
+                <a href="Menu.html"><input type="button" value="Zamów" id="b1"> </a>
                 </div>
         </nav>
     </header>
@@ -127,29 +127,29 @@
             <div id="diety"><div id="dieta1">               
                 <h3><b>Sport</b></h3>
                 <P>Między jednym treningiem a drugim warto pomyśleć nad zdrową i odpowiednio zbilansowaną dietą. Zestaw Sport to dieta pudełkowa dla osób aktywnych fizycznie, dostępny w kalorycznościach: 2000, 2500, 3000, 4000 kcal.</P>
-                <input type="button" class="zamawiam" value="Zamawiam">
+                <input type="button" class="zamawiam" value="Zamawiam" onclick="addToCart('Sport')">
                 <p><sup>Od</sup><b> 76 zł</b></p>
             </div>
             <div id="dieta2">                
                 <h3><b>Economy Box</b></h3>
                 <P>Ciesz się smakiem  wydawaj mniej! Poznaj Economy Box - Zestaw 4 zbilansowanych posiłków dziennie z wykorzystaniem ulubionych dań klientów. Zestaw dostępny w kalorycznościach: 1200, 1500, 1900, 2200 kcal.</P>
-                <input type="button" class="zamawiam" value="Zamawiam">
+                <input type="button" class="zamawiam" value="Zamawiam" onclick="addToCart('Economy Box')">
                 <p><sup>Od</sup><b> 52 zł</b></p>
             </div>
             <div id="dieta3">
                 <h3><b>Wybór Menu 3 Posiłki</b></h3>
                 <p class="dt">Jeszcze więcej elastyczności w diecie! Skomponuj menu 3 posiłków według własnych preferencji. Zestaw Wybór Menu 3 Posiłki dostępny jest w kalorycznościach:900, 1100, 1300, 1450, 1700, 2100 kcal.</p>
-                <input type="button" class="zamawiam" id="zam1" value="Zamawiam">
+                <input type="button" class="zamawiam" id="zam1" value="Zamawiam" onclick="addToCart('Wybor Menu 3 Posiłki')">
                 <p><sup>Od</sup><b> 57 zł</b></p>
             </div>
             <div id="dieta4">
                 <h3><b>Wybór Menu 5 posiłków</b></h3>
                 <p class="dt">Zdecyduj, co dobrego zjesz na śniadanie, II śniadanie, obiad, podwieczorek i kolację. Dieta Wybór Menu 5 Posiłków dostępny jest w kalorycznościach 1250, 1500, 1750, 2000, 2500, 3000 kcal.</p>
-                <input type="button" class="zamawiam" id="zam2" value="Zamawiam">
+                <input type="button" class="zamawiam" id="zam2" value="Zamawiam" onclick="addToCart('Wybór Menu 5 Posiłków')">
                 <p><sup>Od</sup><b> 67 zł</b></p>
             </div></div>
             
-            <input type="button" id="zpd" value="Zobacz pozostałe diety">
+            <a href="Diety.html"><input type="button" id="zpd" value="Zobacz pozostałe diety"></a>
 
         </section>
         <section class="reklama">
@@ -177,7 +177,7 @@
                 <div class="naj">
                     <h3 id="piramida">PIRAMIDA ŻYWIENIOWA 2023 - CZYM JEST PIRAMIDA ZDROWEGO ŻYWIENIA?</h3>
                 <p class="pakt">Przeczytaj artykuł dietetyka Body Chief.</p>
-                <input type="button" class="dsw" id="dsw1" value="> Dowiedz się więcej">
+                <a href="Blog.html"><input type="button" class="dsw" id="dsw1" value="> Dowiedz się więcej"></a>
              </div>
                 
             </div>
@@ -185,11 +185,11 @@
                 <div class="naj">
                     <h3 id="piramida">DIETA FODMAP – ZASADY, ZASTOSOWANIE, JADŁOSPIS</h3>
                 <p class="pakt">Poznaj genezę oraz zasady działania diety FODMAP.</p>
-                <input type="button" class="dsw" id="dsw2" value="> Dowiedz się więcej">
+                <a href="Blog.html"><input type="button" class="dsw" id="dsw2" value="> Dowiedz się więcej"></a>
                 </div>  
                 <img src="naj2.jpg" id="akt2" width="500px" height="400px" alt="naj2">
             </div>
-            <input type="button" id="zw" value="> Zobacz więcej">
+            <a href="Diety.html"><input type="button" id="zw" value="> Zobacz więcej"></a>
 
         </section>
         <section id="partnerzy">
@@ -209,7 +209,7 @@
             <div id="testowa">
                 <p class="dt1"><b>Zamów naszą</b></p>
                 <p class="dt1" id="dtp2"><b>dietę testową</b></p>
-                <input type="button" class="zwc" value="> Zobacz więcej">
+                <a href="Diety.html"><input type="button" class="zwc" value="> Zobacz więcej"></a>
             </div>
         </section>
         <section class="opis">

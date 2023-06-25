@@ -4,11 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Kalam:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styl_menu.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <section class="baner">
+            <a href="Projekt.html"><img src="logo.png" id="logo" class="ban" alt="logo" width="200px" height="100px"></a>
+            
+
+            <div class="mySlides fade">
+                <img src="dostawa.png" style="width:150px; height: 100px;" class="ban">
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="gwarancja.png" style="width:150px; height: 100px;" class="ban">
+              </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  slides[slideIndex-1].style.display = "block";  
+                  setTimeout(showSlides, 4000); 
+                }
+                </script>
+            
+            <div id="ikony" class="ban">
+                <a href="Logowanie.html"><i class="fa-solid fa-user fa-2xl"></i></a>
+                
+                <a href="Koszyk.html"><i class="fa-solid fa-cart-shopping fa-2xl"></i></a>
+            </div>
+            
+        </section>
+        <nav id="menu">
+                <div id="menu1">
+                    <a href="Onas.html" id="onas"><b>O nas</b></a>
+                <a href="Diety.html"><b>Diety</b></a>
+                <a href="Menu.html"><b>Menu</b></a>
+                <a href="Obszar_Dostaw.html" id="od"><b>Obszar Dostaw</b></a>
+                <a href="Kalkulatory.html"><b>Kalkulator</b></a>
+                <a href="Blog.html"><b>Blog</b></a>
+                <a href="Kontakt.html"><b>Kontakt</b></a>
+                <a href="Menu.html"><input type="button" value="Zamów" id="b1"> </a>
+                </div>
+        </nav>
+    </header>
     <script>
-        function myFunction(){
+        function kalkulatorPPM(){
             let a=document.getElementById("masa");
             let b=document.getElementById("wzrost");
             let c=document.getElementById("wiek");
@@ -20,27 +78,37 @@
             else{
                 document.getElementById("wynik").innerHTML="Twoje minimalne zapotrzebowanie kaloryczne wynosi: " + Number(Math.round(wynikmezczyzna)) + " kcal";
             }
-
-            
-            
-
         }
-        
+        </script>
 
-    </script>
     <form>
         <input type="radio" id="kobieta" name="plec" value="Kobieta" checked>Kobieta
         <input type="radio" id="mezczyzna" name="plec" value="mezczyzna">Męzczyzna
     </form>
         
-    <label for="wiek">Wiek:</label>
-    <input type="text" id="wiek" name="wiek">
-    <label id="smasa" for="masa">Podaj mase ciała [kg]</label>
-    <input type="text" id="masa" name="masa"><br>
+    <label for="wiek">Wiek:</label><br>
+    <input type="text" id="wiek" name="wiek"><br><br>
+    <label id="smasa" for="masa">Podaj mase ciała [kg]</label><br>
+    <input type="text" id="masa" name="masa"><br><br>
     <label id="swzrost" for="wzrost">Podaj swój wzrost [cm]</label><br>
-    <input type="text" id="wzrost" name="wzrost"><br>
-    <input type="button" id="b1" value="Oblicz" onclick="myFunction()">
+    <input type="text" id="wzrost" name="wzrost"><br><br>
+    <input type="button" id="b1" value="Oblicz" onclick="kalkulatorPPM()"><br><br>
     <label id="wynik" for="wynik"></label>
+
+    <div style="width: 60%; margin-left: 350px;">
+        <h2><span style="color: rgb(205, 159, 82);">Kalkulator PPM – co to?</span></h2>
+         <p style="text-align: center;"><span style="color: rgb(51, 51, 51);">Kalkulator PPM, czyli podstawowej przemiany materii, pozwala na obliczenie minimalnej energii potrzebnej 
+            organizmowi do podtrzymania podstawowych funkcji życiowych takich jak oddychanie, praca układu sercowo-naczyniowego czy termoregulacja ciała.</span></p> 
+        <h2 style="text-align: center;"><span style="color: rgb(205, 159, 82);">Kalkulator PPM – jak obliczyć?</span></h2> 
+        <p style="text-align: center;"><span style="color: rgb(51, 51, 51);">Kalkulator PPM dostępny na stronie Body Chief korzysta z metody obliczania podstawowej przemiany materii
+             według wzoru opracowanego przez Harrisa-Benedicta. Do obliczenia PPM należy wprowadzić wartości dotyczące płci, wieku, masy ciała oraz wzrostu. 
+             Wartość wskaźnika wyrażona jest w kilokaloriach (kcal).</span></p> 
+        <h2 style="text-align: center;"><span style="color: rgb(205, 159, 82);">Kalkulator PPM – jak interpretować wyniki?</span></h2>
+        <p style="text-align: center;"><span style="color: rgb(51, 51, 51);">Aby poprawnie zinterpretować wynik, należy mieć na uwadze, że kalkulator PPM nie określa całkowitej liczby kalorii,
+            które powinniśmy spożyć w ciągu dnia, ponieważ nie uwzględnia żadnych codziennych aktywności związanych z trybem pracy lub nauki oraz wysiłkiem fizycznym. 
+            Otrzymany wynik stosowany jest w odniesieniu do osób powyżej 18 roku życia, a uzyskane dane są szacunkowe, ponieważ nie zawierają indywidualnych zmiennych takich jak np.
+            skład ciała, rodzaj i intensywność aktywności fizycznej czy też występowanie chorób przewlekłych, które znacząco mogą wpływać na wartość wyniku.<br><br></span></p>
+        </div>
     
     
 </body>

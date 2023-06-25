@@ -13,7 +13,26 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styl.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Projekt</title>
+    <script>
+          function getCityName() {
+    var name = "Warsaw"
+        $.ajax({
+            method: 'GET',
+            url: 'https://api.api-ninjas.com/v1/city?name=' + name,
+            headers: { 'X-Api-Key': 'HYevbONlupkElN0yiFLtKA==sZTjGwa0h7pidXtM'},
+            contentType: 'application/json',
+            success: function(result) {
+                console.log(result);
+            },
+            error: function ajaxError(jqXHR) {
+                console.error('Error: ', jqXHR.responseText);
+            }
+        });}
+        getCityName();
+    </script>
+
 </head>
 <body>
     <header>
@@ -53,7 +72,7 @@
             <div id="ikony" class="ban">
                 <a href="Logowanie.html"><i class="fa-solid fa-user fa-2xl"></i></a>
                 
-                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                <a href="Koszyk.html"><i class="fa-solid fa-cart-shopping fa-2xl"></i></a>
             </div>
             
         </section>
@@ -66,7 +85,7 @@
                 <a href="Kalkulatory.html"><b>Kalkulator</b></a>
                 <a href="Blog.html"><b>Blog</b></a>
                 <a href="Kontakt.html"><b>Kontakt</b></a>
-                <input type="button" value="Zamów" id="b1"> 
+                <a href="Menu.html"><input type="button" value="Zamów" id="b1"> </a>
                 </div>
         </nav>
     </header>
@@ -78,8 +97,10 @@
                 oraz <b>w niedziele</b> od godziny <b>10:00 do 14:00</b>.</p>
                 <h3><b>NASZE ODDZIAŁY:</b></h3>
         </section>
+
+
             <section id="oddziały">
-            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2>Warszawa</h2></a>
+            <div class="kontakt_miasta"><a href="Body_Warszawa.html"><h2><label id="city" hidden>Warsaw</label>Warszawa</h2></a>
                 <label for="tel_wwa"><pre><b>T: </b>727 444 401</pre></label>
                 <label for="Email_wwa"><pre><b>E: </b><a href="mailto:warszawa@bodychief.pl">warszawa@bodychief.pl</a></pre></label>
             </div>
@@ -203,7 +224,41 @@
                 </div>
             </section>
             
-            
+            <input type="text" id="cityInput" placeholder="Warsaw">
+            <button onclick="getCityInfo()">Pokaż informacje o mieście</button>
+            <pre id="resultContainer"></pre>
+
+           <script>
+           function getCityInfo() {
+           var name = document.getElementById('cityInput').value;
+
+           $.ajax({
+           method: 'GET',
+           url: 'https://api.api-ninjas.com/v1/city?name=' + name,
+           headers: { 'X-Api-Key': 'HYevbONlupkElN0yiFLtKA==sZTjGwa0h7pidXtM'},
+           contentType: 'application/json',
+           success: function(result) {
+          // Wyczyszczenie poprzednich wyników
+          document.getElementById('resultContainer').innerHTML = '';
+
+          // Wyświetlenie kolejnych informacji o mieście
+           var cityInfoString = '';
+           for (var i = 0; i < result.length; i++) {
+            var cityInfo = result[i];
+            for (var key in cityInfo) {
+              cityInfoString += key + ': ' + cityInfo[key] + '\n';
+            }
+            cityInfoString += '\n';
+           }
+
+           document.getElementById('resultContainer').innerText = cityInfoString;
+           },
+           error: function ajaxError(jqXHR) {
+          console.error('Error: ', jqXHR.responseText);
+         }
+        });
+      }
+    </script>
     </section>
     <footer>
         <div class="minimenu">
